@@ -12,12 +12,12 @@ namespace mqlib{
     function drawPanel(x = 1, y = 1):void {
         screen1024.fill(0);
         for(var i=0;i<127;i++){
-            OLED12864_I2C.pixelM(i, 0);
-            OLED12864_I2C.pixelM(i, 63);
+            OLED12864_I2C.pixel(i, 0);
+            OLED12864_I2C.pixel(i, 63);
         }
         for(var i=0;i<64;i++){
-            OLED12864_I2C.pixelM(0, i);
-            OLED12864_I2C.pixelM(127, i);
+            OLED12864_I2C.pixel(0, i);
+            OLED12864_I2C.pixel(127, i);
         }
         OLED12864_I2C.showString(1, 1, 'X='+x);
         OLED12864_I2C.showString(1, 2, 'Y='+y);
