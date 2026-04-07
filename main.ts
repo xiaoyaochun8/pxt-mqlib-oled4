@@ -8,7 +8,7 @@ namespace mqlib{
 
     //% subcategory="oled"
     //% group='oled-面板库'
-    //% block
+    //% block="oled面板 x=$x y=$y"
     function oledDrawPanel(x = 1, y = 1):void {
         screen1024.fill(0);
         for(var i=0;i<127;i++){
